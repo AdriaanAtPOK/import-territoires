@@ -12,7 +12,7 @@
     <bind to="department" search="self.code = :department_code"/>
   </input>
 
-  <input file="cities.csv" separator=";" type="com.axelor.apps.base.db.City">
+  <input file="citiesfr.csv" separator=";" type="com.axelor.apps.base.db.City">
     <bind column="zip_code" to="zip"/>
     <bind column="insee_code" to="inseeCode"/>
     <bind column="name" to="name"/>

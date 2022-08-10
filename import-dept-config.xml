@@ -10,7 +10,7 @@
     <bind column="dept" to="name"/>
   </input>
 
-  <input file="departements.csv" separator=";" type="com.axelor.apps.base.db.Department">
+  <input file="departementsfr.csv" separator=";" type="com.axelor.apps.base.db.Department">
     <bind to="region" search="self.name = :region_code"/>
     <bind column="code" to="code"/>
     <bind column="dept" to="name"/>

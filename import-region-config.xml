@@ -10,7 +10,7 @@
     <bind column="name" to="name"/>
   </input>
 
-  <input file="regions.csv" separator=";" type="com.axelor.apps.base.db.Region">
+  <input file="regionsfr.csv" separator=";" type="com.axelor.apps.base.db.Region">
     <bind to="country" search="self.name = 'FRANCE'"/>
     <bind column="code" to="code"/>
     <bind column="name" to="name"/>
