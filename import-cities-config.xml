@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csv-inputs xmlns="http://axelor.com/xml/ns/data-import"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/data-import http://axelor.com/xml/ns/data-import/data-import_5.4.xsd">
+
+  <input file="citiesfr.csv" separator=";" type="com.axelor.apps.base.db.City"
+    search="code = :code" update="true">
+    <bind column="zip_code" to="zip"/>
+    <bind column="insee_code" to="inseeCode"/>
+    <bind column="name" to="name"/>
+    <bind to="country" search="self.name = 'FRANCE'"/>
+    <bind to="department" search="self.code = :department_code"/>
+  </input>
+
+  <input file="cities.csv" separator=";" type="com.axelor.apps.base.db.City">
+    <bind column="zip_code" to="zip"/>
+    <bind column="insee_code" to="inseeCode"/>
+    <bind column="name" to="name"/>
+    <bind to="country" search="self.name = 'FRANCE'"/>
+    <bind to="department" search="self.code = :department_code"/>
+  </input>
+
+</csv-inputs>
