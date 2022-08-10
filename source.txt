@@ -1,1 +1,3 @@
 https://www.data.gouv.fr/fr/datasets/regions-departements-villes-et-villages-de-france-et-doutre-mer/#resources
+https://www.data.gouv.fr/fr/datasets/etats-et-capitales-du-monde/#resources
+https://public.opendatasoft.com/explore/dataset/georef-united-states-of-america-state/export/?flg=fr&disjunctive.ste_code&disjunctive.ste_name&sort=year

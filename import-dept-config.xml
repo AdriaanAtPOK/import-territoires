@@ -3,15 +3,15 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://axelor.com/xml/ns/data-import http://axelor.com/xml/ns/data-import/data-import_5.4.xsd">
 
-  <input file="departementsfr.csv" separator=";" type="com.axelor.apps.base.db.Department"
+  <input file="departmentsfr.csv" separator=";" type="com.axelor.apps.base.db.Department"
     search="code = :code" update="true">
-    <bind to="region" search="self.name = :region_code"/>
+    <bind to="region" search="self.code = :region_code"/>
     <bind column="code" to="code"/>
     <bind column="dept" to="name"/>
   </input>
 
-  <input file="departementsfr.csv" separator=";" type="com.axelor.apps.base.db.Department">
-    <bind to="region" search="self.name = :region_code"/>
+  <input file="departmentsfr.csv" separator=";" type="com.axelor.apps.base.db.Department">
+    <bind to="region" search="self.code = :region_code"/>
     <bind column="code" to="code"/>
     <bind column="dept" to="name"/>
   </input>
